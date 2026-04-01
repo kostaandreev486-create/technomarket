@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700" role="img" aria-label="8:@>2>;=>20O ?5GL">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1f5f9" />
+      <stop offset="1" stop-color="#e0e7ff" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" rx="48" fill="url(#bg)" />
+  <g transform="translate(150 200)">
+    <rect x="0" y="0" width="600" height="260" rx="44" fill="#ffffff" stroke="#cbd5e1" stroke-width="6"/>
+    <rect x="34" y="42" width="360" height="176" rx="26" fill="#0f172a" opacity="0.92"/>
+    <rect x="426" y="42" width="140" height="56" rx="18" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="4"/>
+    <rect x="426" y="114" width="140" height="104" rx="26" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="4"/>
+    <circle cx="462" cy="166" r="10" fill="#60a5fa" opacity="0.85"/>
+    <circle cx="498" cy="166" r="10" fill="#60a5fa" opacity="0.6"/>
+    <circle cx="534" cy="166" r="10" fill="#60a5fa" opacity="0.35"/>
+  </g>
+  <text x="60" y="625" font-family="system-ui,Segoe UI,Arial" font-size="36" fill="#0f172a" opacity="0.85">
+    HeatWave 20  D>B> 1
+  </text>
+</svg>
+

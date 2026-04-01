@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700" role="img" aria-label="!B8@0;L=0O <0H8=0">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0f2fe" />
+      <stop offset="1" stop-color="#f1f5f9" />
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" rx="48" fill="url(#bg)" />
+  <g transform="translate(260 95)">
+    <rect x="0" y="0" width="380" height="520" rx="42" fill="#ffffff" stroke="#cbd5e1" stroke-width="6"/>
+    <rect x="38" y="38" width="304" height="70" rx="18" fill="#0f172a" opacity="0.92"/>
+    <circle cx="190" cy="310" r="140" fill="#f8fafc" stroke="#cbd5e1" stroke-width="8"/>
+    <circle cx="190" cy="310" r="98" fill="#60a5fa" opacity="0.18"/>
+    <circle cx="190" cy="310" r="62" fill="#2563eb" opacity="0.14"/>
+    <circle cx="95" cy="73" r="10" fill="#60a5fa" opacity="0.8"/>
+    <circle cx="130" cy="73" r="10" fill="#60a5fa" opacity="0.45"/>
+  </g>
+  <text x="60" y="625" font-family="system-ui,Segoe UI,Arial" font-size="36" fill="#0f172a" opacity="0.85">
+    WashMaster 9 Eco  D>B> 1
+  </text>
+</svg>
+
