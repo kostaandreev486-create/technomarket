@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Правила продажи товаров — ТехноМаркет</title>
+    <meta name="description" content="Правила продажи товаров интернет-магазина ТехноМаркет (заглушка для MVP)." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="ТехноМаркет — на главную">
+          <div class="logo__mark">T</div>
+          <div class="logo__text">ТЕХНОМАРКЕ<span class="logo__accent">Т</span></div>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" data-nav-toggle>☰</button>
+        <nav class="nav nav--open" aria-label="Основная навигация" data-nav>
+          <a href="index.html" class="nav__link">Главная</a>
+          <a href="catalog.html" class="nav__link">Каталог</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+          <a href="account.html" class="nav__link">Личный кабинет</a>
+          <form class="header-search" role="search" aria-label="Быстрый поиск по каталогу" data-search-form>
+            <input class="header-search__input" type="search" name="q" placeholder="Поиск…" autocomplete="off" data-search-input />
+            <button class="header-search__btn" type="submit" aria-label="Найти">⌕</button>
+          </form>
+          <a class="cart-link" href="cart.html" aria-label="Перейти в корзину">
+            <span>Корзина</span>
+            <span class="cart-link__badge" data-cart-count hidden>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <section class="section" aria-labelledby="sales-title">
+          <div class="section__header">
+            <div class="section__title-group">
+              <h1 id="sales-title" class="heading-1">Правила продажи товаров</h1>
+              <p class="section__description text-muted">
+                Заглушка документа для MVP. В промышленной версии текст должен включать порядок оплаты, доставки, возврата и гарантий.
+              </p>
+            </div>
+          </div>
+
+          <div class="account-card">
+            <h2 class="heading-2" style="font-size: 2rem">Сводка (MVP)</h2>
+            <ul class="specs-list">
+              <li>Заказ оформляется через корзину и форму оформления заказа.</li>
+              <li>Доступные способы доставки: самовывоз / курьер / транспортная компания.</li>
+              <li>Подробные условия гарантий и возврата согласуются с Заказчиком.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer page-footer">
+      <div class="container site-footer__inner">
+        <div>© 2026 «ТехноМаркет». Правила продажи.</div>
+        <div class="site-footer__address">г. Москва, ул. Технологическая, д. 15</div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
+

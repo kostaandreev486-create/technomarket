@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Корзина — ТехноМаркет</title>
+    <meta name="description" content="Корзина покупателя интернет-магазина ТехноМаркет." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="ТехноМаркет — на главную">
+          <div class="logo__mark">T</div>
+          <div class="logo__text">
+            ТЕХНОМАРКЕ<span class="logo__accent">Т</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" data-nav-toggle>
+          ☰
+        </button>
+
+        <nav class="nav nav--open" aria-label="Основная навигация" data-nav>
+          <a href="index.html" class="nav__link">Главная</a>
+          <a href="catalog.html" class="nav__link">Каталог</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+          <a href="account.html" class="nav__link">Личный кабинет</a>
+
+          <form class="header-search" role="search" aria-label="Быстрый поиск по каталогу" data-search-form>
+            <input
+              class="header-search__input"
+              type="search"
+              name="q"
+              placeholder="Поиск: холодильник, бренд, артикул…"
+              autocomplete="off"
+              data-search-input
+            />
+            <button class="header-search__btn" type="submit" aria-label="Найти">⌕</button>
+          </form>
+
+          <a class="cart-link" href="cart.html" aria-label="Перейти в корзину">
+            <span>Корзина</span>
+            <span class="cart-link__badge" data-cart-count hidden>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <section class="section" aria-labelledby="cart-title">
+          <div class="section__header">
+            <div class="section__title-group">
+              <h1 id="cart-title" class="heading-1">Корзина</h1>
+              <p class="section__description text-muted">
+                Проверьте список товаров, измените количество или удалите позиции перед оформлением заказа.
+              </p>
+            </div>
+            <a class="btn btn-secondary" href="catalog.html">Продолжить покупки</a>
+          </div>
+
+          <div class="cart-layout">
+            <div class="cart-card">
+              <div class="cart-list" data-cart-list></div>
+              <div class="cart-empty text-muted" data-cart-empty hidden>
+                Корзина пуста. Перейдите в <a href="catalog.html" style="color: var(--accent)">каталог</a>, чтобы добавить товары.
+              </div>
+            </div>
+
+            <aside class="cart-summary" aria-label="Итог заказа">
+              <div class="cart-summary__row">
+                <span class="text-muted">Товары</span>
+                <strong data-cart-subtotal>0 ₽</strong>
+              </div>
+              <div class="cart-summary__row">
+                <span class="text-muted">Доставка</span>
+                <strong data-cart-delivery>0 ₽</strong>
+              </div>
+              <div class="cart-summary__total">
+                <span>Итого</span>
+                <strong data-cart-total>0 ₽</strong>
+              </div>
+              <a class="btn" href="checkout.html" data-checkout-btn aria-disabled="true">Оформить заказ <span>→</span></a>
+              <button class="btn btn-secondary" type="button" data-clear-cart>Очистить корзину</button>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer page-footer">
+      <div class="container site-footer__inner">
+        <div>© 2026 «ТехноМаркет». Корзина.</div>
+        <div class="footer-links">
+          <a href="help.html">Помощь</a>
+          <a href="privacy.html">Политика ПДн</a>
+          <a href="terms.html">Соглашение</a>
+          <a href="sales.html">Правила продажи</a>
+        </div>
+        <div class="site-footer__address">г. Москва, ул. Технологическая, д. 15</div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/pages/cart.js"></script>
+  </body>
+</html>
+

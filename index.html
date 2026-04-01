@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ТехноМаркет — Магазин бытовой техники</title>
+    <meta
+      name="description"
+      content="ТехноМаркет — современный магазин бытовой техники. Подбор холодильников, стиральных машин, кофемашин и другой техники для дома."
+    />
+    <!-- Подключение единого файла стилей -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <!-- Шапка сайта с логотипом и навигацией -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="ТехноМаркет — на главную">
+          <div class="logo__mark">T</div>
+          <div class="logo__text">
+            ТЕХНОМАРКЕ<span class="logo__accent">Т</span>
+          </div>
+        </a>
+
+        <!-- Кнопка для открытия меню на мобильных устройствах (визуальная, без JS) -->
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" data-nav-toggle>
+          ☰
+        </button>
+
+        <nav class="nav nav--open" aria-label="Основная навигация" data-nav>
+          <a href="index.html" class="nav__link nav__link--active">Главная</a>
+          <a href="catalog.html" class="nav__link">Каталог</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+          <a href="account.html" class="nav__link">Личный кабинет</a>
+
+          <form class="header-search" role="search" aria-label="Быстрый поиск по каталогу" data-search-form>
+            <input
+              class="header-search__input"
+              type="search"
+              name="q"
+              placeholder="Поиск: холодильник, бренд, артикул…"
+              autocomplete="off"
+              data-search-input
+            />
+            <button class="header-search__btn" type="submit" aria-label="Найти">⌕</button>
+          </form>
+
+          <a class="cart-link" href="cart.html" aria-label="Перейти в корзину">
+            <span>Корзина</span>
+            <span class="cart-link__badge" data-cart-count hidden>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <!-- Hero-секция с ключевым сообщением -->
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero__content">
+            <div class="badge">Техника для дома без компромиссов</div>
+            <h1 id="hero-title" class="heading-1 hero__title">
+              Техника для дома высокого качества
+            </h1>
+            <p class="hero__subtitle">
+              Подбираем проверенную бытовую технику от ведущих брендов. Надёжные
+              холодильники, стиральные машины, кофемашины и мелкая техника для
+              комфортной жизни.
+            </p>
+
+            <div class="hero__actions">
+              <a href="catalog.html" class="btn">
+                Перейти в каталог
+                <span>→</span>
+              </a>
+              <a href="contacts.html" class="btn btn-secondary">
+                Консультация специалиста
+              </a>
+            </div>
+
+            <div class="hero__meta" aria-label="Основные преимущества магазина">
+              <div class="hero__meta-item">
+                <span class="hero__meta-label">Ассортимент</span>
+                <span class="hero__meta-value">1000+ моделей техники</span>
+              </div>
+              <div class="hero__meta-item">
+                <span class="hero__meta-label">Гарантия</span>
+                <span class="hero__meta-value">до 5 лет от производителя</span>
+              </div>
+              <div class="hero__meta-item">
+                <span class="hero__meta-label">Доставка</span>
+                <span class="hero__meta-value">по городу в день заказа</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Визуальный блок с акцентом на холодильник -->
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero-orbit">
+              <div class="hero-orbit__chip">
+                ★ Более 4.9 — рейтинг сервиса
+              </div>
+            </div>
+            <article class="hero-card">
+              <div class="hero-card__glow"></div>
+              <div class="hero-card__label">
+                <span class="hero-card__icon">🧊</span>
+                Холодильник CoolPro X5
+              </div>
+              <div class="hero-card__product">
+                <div class="hero-card__name">Максимальная свежесть продуктов</div>
+                <div class="hero-card__price">от 72 990 ₽</div>
+              </div>
+              <div class="hero-card__meta">
+                <span>Класс энергопотребления A+++</span>
+                <span>Объём 380 л</span>
+              </div>
+              <div class="hero-card__chip">
+                <span>✓</span>
+                Бесплатная установка
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Блок популярных товаров -->
+        <section class="section" aria-labelledby="popular-title">
+          <div class="section__header">
+            <div class="section__title-group">
+              <h2 id="popular-title" class="heading-2">Популярные товары</h2>
+              <p class="section__description text-muted">
+                Подборка устройств, которые чаще всего выбирают наши клиенты для
+                оснащения кухни и дома.
+              </p>
+            </div>
+            <a href="catalog.html" class="btn btn-secondary">
+              Открыть полный каталог
+            </a>
+          </div>
+
+          <div class="products-grid" aria-label="Популярные товары" data-popular-grid></div>
+
+          <p class="text-muted" style="margin-top: 2rem; font-size: 1.4rem">
+            Цены и наличие указаны для примера и могут отличаться от актуальных
+            предложений.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Подвал сайта с копирайтом и адресом -->
+    <footer class="site-footer page-footer">
+      <div class="container site-footer__inner">
+        <div>© 2026 «ТехноМаркет». Все права защищены.</div>
+        <div class="footer-links">
+          <a href="help.html">Помощь</a>
+          <a href="privacy.html">Политика ПДн</a>
+          <a href="terms.html">Соглашение</a>
+          <a href="sales.html">Правила продажи</a>
+        </div>
+        <div class="site-footer__address">
+          г. Москва, ул. Технологическая, д. 15
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/pages/home.js"></script>
+  </body>
+</html>
+

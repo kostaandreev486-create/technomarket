@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Личный кабинет — ТехноМаркет</title>
+    <meta name="description" content="Личный кабинет клиента ТехноМаркет: вход, регистрация, история заказов." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="ТехноМаркет — на главную">
+          <div class="logo__mark">T</div>
+          <div class="logo__text">
+            ТЕХНОМАРКЕ<span class="logo__accent">Т</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" data-nav-toggle>
+          ☰
+        </button>
+
+        <nav class="nav nav--open" aria-label="Основная навигация" data-nav>
+          <a href="index.html" class="nav__link">Главная</a>
+          <a href="catalog.html" class="nav__link">Каталог</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+          <a href="account.html" class="nav__link nav__link--active">Личный кабинет</a>
+
+          <form class="header-search" role="search" aria-label="Быстрый поиск по каталогу" data-search-form>
+            <input
+              class="header-search__input"
+              type="search"
+              name="q"
+              placeholder="Поиск: холодильник, бренд, артикул…"
+              autocomplete="off"
+              data-search-input
+            />
+            <button class="header-search__btn" type="submit" aria-label="Найти">⌕</button>
+          </form>
+
+          <a class="cart-link" href="cart.html" aria-label="Перейти в корзину">
+            <span>Корзина</span>
+            <span class="cart-link__badge" data-cart-count hidden>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <section class="section" aria-labelledby="account-title">
+          <div class="section__header">
+            <div class="section__title-group">
+              <h1 id="account-title" class="heading-1">Личный кабинет</h1>
+              <p class="section__description text-muted">
+                Войдите или зарегистрируйтесь, чтобы смотреть историю заказов и их статусы.
+              </p>
+            </div>
+          </div>
+
+          <div class="account-layout" data-account-root></div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer page-footer">
+      <div class="container site-footer__inner">
+        <div>© 2026 «ТехноМаркет». Личный кабинет.</div>
+        <div class="footer-links">
+          <a href="help.html">Помощь</a>
+          <a href="privacy.html">Политика ПДн</a>
+          <a href="terms.html">Соглашение</a>
+          <a href="sales.html">Правила продажи</a>
+        </div>
+        <div class="site-footer__address">г. Москва, ул. Технологическая, д. 15</div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/pages/account.js"></script>
+  </body>
+</html>
+

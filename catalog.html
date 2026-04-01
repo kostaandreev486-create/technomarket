@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Каталог — ТехноМаркет</title>
+    <meta
+      name="description"
+      content="Каталог бытовой техники магазина ТехноМаркет: холодильники, стиральные машины, кофемашины, пылесосы и другая техника для дома."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="ТехноМаркет — на главную">
+          <div class="logo__mark">T</div>
+          <div class="logo__text">
+            ТЕХНОМАРКЕ<span class="logo__accent">Т</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" data-nav-toggle>
+          ☰
+        </button>
+
+        <nav class="nav nav--open" aria-label="Основная навигация" data-nav>
+          <a href="index.html" class="nav__link">Главная</a>
+          <a href="catalog.html" class="nav__link nav__link--active">Каталог</a>
+          <a href="contacts.html" class="nav__link">Контакты</a>
+          <a href="account.html" class="nav__link">Личный кабинет</a>
+
+          <form class="header-search" role="search" aria-label="Быстрый поиск по каталогу" data-search-form>
+            <input
+              class="header-search__input"
+              type="search"
+              name="q"
+              placeholder="Поиск: холодильник, бренд, артикул…"
+              autocomplete="off"
+              data-search-input
+            />
+            <button class="header-search__btn" type="submit" aria-label="Найти">⌕</button>
+          </form>
+
+          <a class="cart-link" href="cart.html" aria-label="Перейти в корзину">
+            <span>Корзина</span>
+            <span class="cart-link__badge" data-cart-count hidden>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <!-- Заголовок и краткое описание каталога -->
+        <section class="section" aria-labelledby="catalog-title">
+          <div class="section__header">
+            <div class="section__title-group">
+              <h1 id="catalog-title" class="heading-1">Каталог товаров</h1>
+              <p class="section__description text-muted">
+                Подберите технику для кухни, стирки и ухода за домом. Ниже приведён
+                демонстрационный набор позиций.
+              </p>
+            </div>
+          </div>
+
+          <div class="catalog-layout" aria-label="Каталог с фильтрами">
+            <aside class="catalog-filters" aria-label="Фильтры каталога">
+              <form class="filters-form" data-filters-form>
+                <div class="filters-form__section">
+                  <div class="filters-form__title">Категория</div>
+                  <select class="input" name="category" aria-label="Категория">
+                    <option value="">Все товары</option>
+                  </select>
+                </div>
+
+                <div class="filters-form__section">
+                  <div class="filters-form__title">Цена</div>
+                  <div class="filters-form__row">
+                    <label class="field">
+                      <span class="field__label">От</span>
+                      <input class="input" type="number" name="priceMin" min="0" step="10" placeholder="0" />
+                    </label>
+                    <label class="field">
+                      <span class="field__label">До</span>
+                      <input class="input" type="number" name="priceMax" min="0" step="10" placeholder="999999" />
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filters-form__section">
+                  <div class="filters-form__title">Бренд</div>
+                  <div class="filters-form__list" data-brands></div>
+                </div>
+
+                <div class="filters-form__section">
+                  <div class="filters-form__title">Ключевые характеристики</div>
+                  <label class="checkbox">
+                    <input type="checkbox" name="freshZone" value="1" />
+                    <span>Зона свежести (холодильники)</span>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="leakProtection" value="1" />
+                    <span>Защита от протечек (стиральные)</span>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="wireless" value="1" />
+                    <span>Беспроводной (пылесосы)</span>
+                  </label>
+                </div>
+
+                <div class="filters-form__actions">
+                  <button class="btn btn-secondary" type="button" data-filters-reset>
+                    Сбросить
+                  </button>
+                </div>
+              </form>
+            </aside>
+
+            <div>
+              <div class="catalog-toolbar">
+                <div class="text-muted" data-results-caption>Загрузка каталога…</div>
+                <label class="field" style="max-width: 260px">
+                  <span class="field__label">Сортировка</span>
+                  <select class="input" name="sort" data-sort>
+                    <option value="popular">Популярные</option>
+                    <option value="priceAsc">Цена: по возрастанию</option>
+                    <option value="priceDesc">Цена: по убыванию</option>
+                    <option value="nameAsc">Название: A→Я</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="products-grid products-grid--catalog" aria-label="Каталог товаров" data-products-grid></div>
+            </div>
+          </div>
+
+          <p class="text-muted" style="margin-top: 2.4rem; font-size: 1.4rem">
+            Представленные позиции используются как пример структуры каталога. В реальном
+            проекте карточки наполняются данными из системы управления контентом или базы
+            данных.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer page-footer">
+      <div class="container site-footer__inner">
+        <div>© 2026 «ТехноМаркет». Каталог бытовой техники.</div>
+        <div class="footer-links">
+          <a href="help.html">Помощь</a>
+          <a href="privacy.html">Политика ПДн</a>
+          <a href="terms.html">Соглашение</a>
+          <a href="sales.html">Правила продажи</a>
+        </div>
+        <div class="site-footer__address">
+          г. Москва, ул. Технологическая, д. 15
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/pages/catalog.js"></script>
+  </body>
+</html>
+

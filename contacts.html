@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Контакты — ТехноМаркет</title>
+    <meta
+      name="description"
+      content="Контактная информация магазина бытовой техники ТехноМаркет: адрес, телефон, email и режим работы."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo" aria-label="ТехноМаркет — на главную">
+          <div class="logo__mark">T</div>
+          <div class="logo__text">
+            ТЕХНОМАРКЕ<span class="logo__accent">Т</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" data-nav-toggle>
+          ☰
+        </button>
+
+        <nav class="nav nav--open" aria-label="Основная навигация" data-nav>
+          <a href="index.html" class="nav__link">Главная</a>
+          <a href="catalog.html" class="nav__link">Каталог</a>
+          <a href="contacts.html" class="nav__link nav__link--active">Контакты</a>
+          <a href="account.html" class="nav__link">Личный кабинет</a>
+
+          <form class="header-search" role="search" aria-label="Быстрый поиск по каталогу" data-search-form>
+            <input
+              class="header-search__input"
+              type="search"
+              name="q"
+              placeholder="Поиск: холодильник, бренд, артикул…"
+              autocomplete="off"
+              data-search-input
+            />
+            <button class="header-search__btn" type="submit" aria-label="Найти">⌕</button>
+          </form>
+
+          <a class="cart-link" href="cart.html" aria-label="Перейти в корзину">
+            <span>Корзина</span>
+            <span class="cart-link__badge" data-cart-count hidden>0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container">
+        <!-- Заголовок страницы контактов -->
+        <section class="section" aria-labelledby="contacts-title">
+          <div class="section__header">
+            <div class="section__title-group">
+              <h1 id="contacts-title" class="heading-1">Контакты</h1>
+              <p class="section__description text-muted">
+                Свяжитесь с нами любым удобным способом. Команда «ТехноМаркет» поможет
+                подобрать технику под ваши задачи и ответит на все вопросы.
+              </p>
+            </div>
+          </div>
+
+          <div class="contacts-layout">
+            <!-- Карточка с контактной информацией -->
+            <section class="contacts-card" aria-label="Контактные данные магазина">
+              <h2 class="heading-2" style="font-size: 2rem; margin-bottom: 0.8rem">
+                Магазин бытовой техники «ТехноМаркет»
+              </h2>
+
+              <p class="text-muted">
+                Данные указаны для примера и демонстрации структуры страницы контактов.
+              </p>
+
+              <div class="contacts-list">
+                <div>
+                  <div class="contacts-list__item-title">Адрес</div>
+                  <div class="contacts-list__item-text">
+                    г. Москва, ул. Технологическая, д. 15, ТЦ «ТехноСити», 2 этаж
+                  </div>
+                </div>
+
+                <div>
+                  <div class="contacts-list__item-title">Телефон</div>
+                  <div class="contacts-list__item-text">
+                    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="contacts-list__item-title">Email</div>
+                  <div class="contacts-list__item-text">
+                    <a href="mailto:info@technomarket.ru">info@technomarket.ru</a>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="contacts-list__item-title">Режим работы</div>
+                  <div class="contacts-list__item-text">
+                    Пн–Вс: 10:00–21:00<br />
+                    Без выходных
+                  </div>
+                </div>
+
+                <div>
+                  <div class="contacts-list__item-title">Поддержка клиентов</div>
+                  <div class="contacts-list__item-text">
+                    По вопросам заказа, доставки и гарантийного обслуживания:
+                    <br />
+                    <a href="mailto:support@technomarket.ru">support@technomarket.ru</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider"></div>
+
+              <section aria-label="Форма обратной связи">
+                <h2 class="heading-2" style="font-size: 2rem; margin-bottom: 0.8rem">
+                  Форма обратной связи
+                </h2>
+                <form class="stack" data-feedback-form>
+                  <label class="field">
+                    <span class="field__label">Имя</span>
+                    <input class="input" name="name" autocomplete="name" required />
+                  </label>
+                  <label class="field">
+                    <span class="field__label">Телефон или email</span>
+                    <input class="input" name="contact" autocomplete="email" required />
+                  </label>
+                  <label class="field">
+                    <span class="field__label">Вопрос</span>
+                    <textarea class="input textarea" name="question" rows="4" required></textarea>
+                  </label>
+                  <button class="btn" type="submit">
+                    Отправить
+                    <span>→</span>
+                  </button>
+                  <div class="text-muted" style="font-size: 1.2rem">
+                    Отправляя форму, вы соглашаетесь на обработку персональных данных (152‑ФЗ).
+                  </div>
+                </form>
+              </section>
+            </section>
+
+            <!-- Заглушка для карты -->
+            <section class="map-placeholder" aria-label="Карта проезда (заглушка)">
+              <div class="map-placeholder__inner">
+                <div class="map-placeholder__label">
+                  Здесь может быть интегрирована интерактивная карта (например, Яндекс.Карты
+                  или Google Maps)
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer page-footer">
+      <div class="container site-footer__inner">
+        <div>© 2026 «ТехноМаркет». Контактная информация.</div>
+        <div class="footer-links">
+          <a href="help.html">Помощь</a>
+          <a href="privacy.html">Политика ПДн</a>
+          <a href="terms.html">Соглашение</a>
+          <a href="sales.html">Правила продажи</a>
+        </div>
+        <div class="site-footer__address">
+          г. Москва, ул. Технологическая, д. 15
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/pages/contacts.js"></script>
+  </body>
+</html>
+
